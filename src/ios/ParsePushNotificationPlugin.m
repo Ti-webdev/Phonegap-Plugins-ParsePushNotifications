@@ -295,6 +295,8 @@ BOOL canDeliverNotifications = NO;
 
                 [jsEventQueue addObject:jsCallBack];
                 [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:payload];
+                [self.webView stringByEvaluatingJavaScriptFromString:jsCallBack];
+
         }
 }
 
