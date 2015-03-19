@@ -34,7 +34,13 @@ window.parsePush.ontrigger = function(appState,data){
 }
 ```
 
-
+###Android Only
+Application Crashing in background due to parse receiver application so,
+Register Parse Application in AndroidManifest.xml as application tag android:name=""
+just like below
+```xml
+<application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.stratogos.cordova.parsePushNotifications.ParseApplication" android:supportsRtl="true">
+```
 
 
 
